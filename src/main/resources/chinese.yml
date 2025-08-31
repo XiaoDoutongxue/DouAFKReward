@@ -1,0 +1,66 @@
+# 中文语言文件
+no-permission: "&c你没有权限执行此命令!"
+player-only: "&c只有玩家才能执行此命令!"
+usage: "&c用法: %usage%"
+player-not-found: "&c找不到该玩家!"
+invalid-amount: "&c无效的数量!"
+
+# 帮助消息
+help-header: "&6&lDouAFKReward &7- &f帮助菜单- &bby -小豆同学"
+help-give: "&e/dfd give [玩家] &7- 给予选择工具"
+help-create: "&e/dfd create <区域名称> &7- 创建挂机区域"
+help-remove: "&e/dfd remove <区域名称> &7- 删除挂机区域"
+help-create-top: "&e/dfd create top <time/money> &7- 创建排行榜"
+help-list: "&e/dfd list &7- 列出所有区域"
+help-reload: "&e/dfd reload &7- 重载配置"
+help-tp: "&e/dfd tp <区域名称> &7- 传送到区域"
+help-top: "&e/dfd top <time/money> &7- 查看排行榜"
+help-help: "&e/dfd help &7- 显示帮助"
+
+# 工具消息
+tool-given: "&a已给予 %player% 选择工具"
+tool-first-point: "&a已设置第一个点"
+tool-second-point: "&a已设置第二个点"
+tool-no-points: "&c请先使用选择工具设置两个点"
+tool-different-worlds: "&c两个点必须在同一个世界"
+
+# 区域消息
+area-created: "&a已创建挂机区域: %name%"
+area-removed: "&a已删除挂机区域: %name%"
+area-exists: "&c挂机区域已存在: %name%"
+area-not-found: "&c找不到挂机区域: %name%"
+area-teleported: "&a已传送到挂机区域: %name%"
+area-list-header: "&6&l挂机区域列表:"
+area-list-item: "&7- &e%name% &7(世界: %world%, 坐标: %minX%,%minY%,%minZ% ~ %maxX%,%maxY%,%maxZ%)"
+no-areas: "&c没有配置任何挂机区域"
+
+# 挂机消息
+enter-afk: "&a你已进入挂机区域!"
+leave-afk: "&c你已离开挂机区，欢迎下次再来！"
+reward-received: "&a挂机奖励:&e %amount%游戏币"
+
+# 配置消息
+config-reloaded: "&6&lDouAFKReward &7- &a配置已重载!"
+
+# 排行榜消息
+top-created: "&a已创建 %type% 排行榜"
+time-leaderboard-header: "&6&l挂机时间排行榜"
+money-leaderboard-header: "&6&l挂机收益排行榜"
+time-leaderboard-line: "&e%rank%. &b%player% &7- &e%time%"
+money-leaderboard-line: "&e%rank%. &b%player% &7- &e$%money%"
+no-leaderboard-data: "&c暂无排行榜数据"
+time-format: "%d小时%d分钟"
+money-format: "%.2f"
+
+# 排行榜格式配置
+top-formats:
+  time:
+    header: "&6&l挂机时间排行榜"
+    no-data: "&c暂无数据"
+    line: "&e%rank%. &b%player% &7- &e%time%"
+    time-format: "%d小时%d分钟"
+  money:
+    header: "&6&l挂机收益排行榜"
+    no-data: "&c暂无数据"
+    line: "&e%rank%. &b%player% &7- &e$%money%"
+    money-format: "%.2f"

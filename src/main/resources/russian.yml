@@ -1,0 +1,66 @@
+# Russian Language File (Русский языковой файл)
+no-permission: "&cУ вас нет прав для выполнения этой команды!"
+player-only: "&cТолько игроки могут выполнять эту команду!"
+usage: "&cИспользование: %usage%"
+player-not-found: "&cИгрок не найден!"
+invalid-amount: "&cНеверное количество!"
+
+# Сообщения помощи
+help-header: "&6&lDouAFKReward &7- &fМеню помощи- &bby -小豆同学"
+help-give: "&e/dfd give [игрок] &7- Выдать инструмент выбора"
+help-create: "&e/dfd create <название области> &7- Создать AFK зону"
+help-remove: "&e/dfd remove <название области> &7- Удалить AFK зону"
+help-create-top: "&e/dfd create top <time/money> &7- Создать таблицу лидеров"
+help-list: "&e/dfd list &7- Список всех зон"
+help-reload: "&e/dfd reload &7- Перезагрузить конфигурацию"
+help-tp: "&e/dfd tp <название области> &7- Телепортироваться в зону"
+help-top: "&e/dfd top <time/money> &7- Просмотр таблицы лидеров"
+help-help: "&e/dfd help &7- Показать помощь"
+
+# Сообщения инструмента
+tool-given: "&aИнструмент выбора выдан игроку %player%"
+tool-first-point: "&aПервая точка установлена"
+tool-second-point: "&aВторая точка установлена"
+tool-no-points: "&cСначала установите две точки с помощью инструмента выбора"
+tool-different-worlds: "&cОбе точки должны быть в одном мире"
+
+# Сообщения областей
+area-created: "&aAFK зона создана: %name%"
+area-removed: "&aAFK зона удалена: %name%"
+area-exists: "&cAFK зона уже существует: %name%"
+area-not-found: "&cAFK зона не найдена: %name%"
+area-teleported: "&aТелепортирован в AFK зону: %name%"
+area-list-header: "&6&lСписок AFK зон:"
+area-list-item: "&7- &e%name% &7(Мир: %world%, Координаты: %minX%,%minY%,%minZ% ~ %maxX%,%maxY%,%maxZ%)"
+no-areas: "&cНет настроенных AFK зон"
+
+# AFK сообщения
+enter-afk: "&aВы вошли в AFK зону, начинаете получать награды!"
+leave-afk: "&cВы покинули AFK зону, награды остановлены!"
+reward-received: "&aВы получили %amount% награды в зоне %area%!"
+
+# Сообщения конфигурации
+config-reloaded: "&6&lDouAFKReward &7-&aКонфигурация перезагружена!"
+
+# Сообщения таблицы лидеров
+top-created: "&aСоздана таблица лидеров %type%"
+time-leaderboard-header: "&6&lТаблица лидеров AFK времени"
+money-leaderboard-header: "&6&lТаблица лидеров AFK заработка"
+time-leaderboard-line: "&e%rank%. &b%player% &7- &e%time%"
+money-leaderboard-line: "&e%rank%. &b%player% &7- &e$%money%"
+no-leaderboard-data: "&cДанные таблицы лидеров недоступны"
+time-format: "%d часов %d минут"
+money-format: "%.2f"
+
+# Конфигурация формата таблицы лидеров
+top-formats:
+  time:
+    header: "&6&lТаблица лидеров AFK времени"
+    no-data: "&cДанные недоступны"
+    line: "&e%rank%. &b%player% &7- &e%time%"
+    time-format: "%d часов %d минут"
+  money:
+    header: "&6&lТаблица лидеров AFK заработка"
+    no-data: "&cДанные недоступны"
+    line: "&e%rank%. &b%player% &7- &e$%money%"
+    money-format: "%.2f"

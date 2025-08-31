@@ -1,0 +1,62 @@
+# DouAFKReward 配置文件
+# 作者: 小豆同学
+# QQ: 2321388357
+
+# 语言设置
+language: chinese.yml
+# 可选: chinese.yml, english.yml, russian.yml
+
+# 全局奖励设置 - 对所有挂机区域生效
+reward-interval: 60      # 奖励间隔（秒）
+base-reward:
+  min: 5.0               # 基础奖励最小值
+  max: 15.0              # 基础奖励最大值
+use-random-reward: true  # 是否使用随机奖励
+
+# 消息设置
+message-settings:
+  chat-enabled: true      # 是否启用聊天消息
+  title-enabled: true     # 是否启用标题消息
+  actionbar-enabled: false # 是否启用动作栏消息
+
+# 音效设置
+sound-enabled: true       # 是否启用奖励音效
+
+# 权限组随机奖励设置
+group-bonus:
+  default:
+    min: 1.0          # 默认权限组额外奖励最小值
+    max: 4.0            # 默认权限组额外奖励最大值
+  mengxin:
+    min: 2.0
+    max: 5.0
+  vip1:
+    min: 3.0              # VIP权限组额外奖励最小值
+    max: 6.0              # VIP权限组额外奖励最大值
+  vip2:
+    min: 6.0
+    max: 8.0
+  vip3:
+    min: 8.0
+    max: 11.0
+  vip4:
+    min: 10.0
+    max: 13.0
+  vip5:
+    min: 12.0
+    max: 16.0
+
+# 每日限制设置
+daily-limits:
+  enabled: true           # 是否启用每日限制
+  max-reward: 20000.0     # 每日最大奖励金额
+  reset-time: "00:00"     # 每日重置时间
+
+# 排行榜设置
+leaderboards:
+  save-interval: 2        # 数据保存间隔（分钟）
+  hologram-enabled: true  # 是否启用全息图排行榜
+  update-interval: 60     # 排行榜更新间隔（秒）
+
+# 调试设置
+debug: false              # 调试模式

@@ -1,0 +1,98 @@
+# DouAFKReward 配置文件
+# 作者: 小豆同学
+# QQ: 2321388357
+# 
+# 语言设置
+language: chinese.yml
+message-settings:
+  chat-enabled: true
+  title-enabled: false
+  actionbar-enabled: false
+sound-enabled: true
+group-multipliers:
+  default: 1.0
+  vip1: 2.0
+  vip2: 3.0
+  vip3: 4.0
+  vip4: 5.0
+  vip5: 10.0
+daily-limits:
+  enabled: true
+  max-reward: 10000.0
+  reset-time: 00:00
+leaderboards:
+  save-interval: 5
+  hologram-enabled: true
+  update-interval: 60
+debug: false
+afk-areas:
+  '1':
+    world: guaji
+    minX: -30
+    minY: 17
+    minZ: -10
+    maxX: 6
+    maxY: 87
+    maxZ: 76
+    interval: 60
+    reward: 10.0
+  '2':
+    world: guaji
+    minX: -13
+    minY: 17
+    minZ: 77
+    maxX: 6
+    maxY: 87
+    maxZ: 110
+    interval: 60
+    reward: 10.0
+  '3':
+    world: guaji
+    minX: -87
+    minY: 17
+    minZ: 101
+    maxX: -14
+    maxY: 87
+    maxZ: 110
+    interval: 60
+    reward: 10.0
+  '4':
+    world: guaji
+    minX: -87
+    minY: 17
+    minZ: 77
+    maxX: -58
+    maxY: 87
+    maxZ: 100
+    interval: 60
+    reward: 10.0
+  '5':
+    world: guaji
+    minX: -88
+    minY: 17
+    minZ: -44
+    maxX: -31
+    maxY: 87
+    maxZ: 70
+    interval: 60
+    reward: 10.0
+  '6':
+    world: guaji
+    minX: -30
+    minY: 35
+    minZ: -44
+    maxX: -25
+    maxY: 87
+    maxZ: -11
+    interval: 60
+    reward: 10.0
+  '7':
+    world: guaji
+    minX: -87
+    minY: 17
+    minZ: 71
+    maxX: -40
+    maxY: 87
+    maxZ: 76
+    interval: 60
+    reward: 10.0

@@ -1,0 +1,91 @@
+# messages.yml - DouAFKReward 插件消息配置文件
+# 颜色代码使用 & 符号，支持 RGB 颜色（&#RRGGBB）和标准颜色代码（&a, &c 等）
+
+# ========== 通用消息 ==========
+no-permission: "&c你没有权限使用此命令!"
+player-only: "&c只有玩家可以使用此命令!"
+usage: "&c用法: %usage%"
+invalid-amount: "&c无效的金额!"
+player-not-found: "&c玩家不存在或不在线!"
+config-reloaded: "&a配置已重新加载!"
+
+# ========== 挂机相关消息 ==========
+enter-afk: "&a你已开始挂机!"
+leave-afk: "&c你已停止挂机!"
+reward-received: "&6挂机奖励: &a%amount%"
+daily-limit-reached: "&c今日挂机奖励已达上限!"
+
+# ========== 区域管理消息 ==========
+area-created: "&a挂机区域 &e%name% &a已成功创建!"
+area-removed: "&a挂机区域 &e%name% &a已成功删除!"
+area-exists: "&c挂机区域 &e%name% &c已存在!"
+area-not-found: "&c挂机区域 &e%name% &c不存在!"
+area-teleported: "&a已传送至挂机区域 &e%name%"
+area-list-header: "&6========== 挂机区域列表 =========="
+area-list-item: "&e%name% &7- &a世界: %world% &7坐标: &b(%minX%,%minY%,%minZ%) &7至 &b(%maxX%,%maxY%,%maxZ%)"
+no-areas: "&c暂无挂机区域"
+
+# ========== 工具相关消息 ==========
+tool-given: "&a已向 &e%player% &a发放区域选择工具"
+tool-no-points: "&c请先用选择工具选择两个点!"
+tool-different-worlds: "&c两个选择点必须在同一世界!"
+
+# ========== 排行榜相关消息 ==========
+top-created: "&a已创建 &e%type% &a排行榜"
+
+# ========== 排行榜格式配置 ==========
+formats:
+  time:
+    header: "&6========== 挂机时长排行榜 =========="
+    line: "&e%rank%. &f%player% &7- &a%hours%小时%minutes%分钟"
+    no-data: "&c暂无挂机数据"
+    time-format: "%d小时%02d分钟"
+
+  money:
+    header: "&6========== 挂机收益排行榜 =========="
+    line: "&e%rank%. &f%player% &7- &a%money%"
+    no-data: "&c暂无收益数据"
+    money-format: "%.2f"
+
+# ========== 帮助消息 ==========
+help-header: "&e========== &aDouAFKReward 帮助&7--&b[小豆同学]&e=========="
+help-give: "&b/dfd give [玩家] &a- 获取区域选择工具"
+help-create: "&b/dfd create <名称> &a- 创建挂机区域"
+help-remove: "&b/dfd remove <名称> &a- 删除挂机区域"
+help-create-top: "&b/dfd create top <time/money> &a- 创建排行榜"
+help-list: "&b/dfd list &a- 查看所有挂机区域"
+help-reload: "&b/dfd reload &a- 重载配置文件"
+help-tp: "&b/dfd tp <区域名称> &a- 传送到挂机区域"
+help-top: "&b/dfd top <time/money> &a- 查看排行榜"
+help-help: "&b/dfd help &a- 查看帮助信息"
+help-get: "&e/dfd get <名称> &7- 创建坐下挂机区域"
+help-getremove: "&e/dfd getremove <名称> &7- 删除坐下挂机区域"
+
+# ========== 其他消息 ==========
+messages:
+  # 备用消息配置（与上述消息重复，但使用 messages. 前缀）
+  no-permission: "&c你没有权限使用此命令!"
+  player-only: "&c只有玩家可以使用此命令!"
+  usage: "&c用法: %usage%"
+  invalid-amount: "&c无效的金额!"
+  player-not-found: "&c玩家不存在或不在线!"
+  enter-afk: "&a你已开始挂机!"
+  leave-afk: "&c你已停止挂机!"
+  reward-received: "&6挂机奖励: &a%amount%"
+  daily-limit-reached: "&c今日挂机奖励已达上限!"
+  config-reloaded: "&a配置已重新加载!"
+  area-created: "&a挂机区域 &e%name% &a已成功创建!"
+  area-removed: "&a挂机区域 &e%name% &a已成功删除!"
+  area-exists: "&c挂机区域 &e%name% &c已存在!"
+  area-not-found: "&c挂机区域 &e%name% &c不存在!"
+  area-teleported: "&a已传送至挂机区域 &e%name%"
+  tool-given: "&a已向 &e%player% &a发放区域选择工具"
+  tool-no-points: "&c请先用选择工具选择两个点!"
+  tool-different-worlds: "&c两个选择点必须在同一世界!"
+  top-created: "&a已创建 &e%type% &a排行榜"
+
+# 坐下挂机区域消息
+  sit-area-created: "&a坐下挂机区域 &e%name% &a已成功创建!"
+  sit-area-removed: "&a坐下挂机区域 &e%name% &a已成功删除!"
+  sit-area-list-header: "&6========== 坐下挂机区域列表 =========="
+  sit-area-list-item: "&e%name% &7- &a世界: %world% &7位置: &b(%x%,%y%,%z%) &7方块: &b%material%"

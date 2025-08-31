@@ -1,0 +1,66 @@
+# English Language File
+no-permission: "&cYou don't have permission to execute this command!"
+player-only: "&cOnly players can execute this command!"
+usage: "&cUsage: %usage%"
+player-not-found: "&cPlayer not found!"
+invalid-amount: "&cInvalid amount!"
+
+# Help messages
+help-header: "&6&lDouAFKReward &7- &fHelp Menu- &bby -小豆同学"
+help-give: "&e/dfd give [player] &7- Give selection tool"
+help-create: "&e/dfd create <area name> &7- Create AFK area"
+help-remove: "&e/dfd remove <area name> &7- Remove AFK area"
+help-create-top: "&e/dfd create top <time/money> &7- Create leaderboard"
+help-list: "&e/dfd list &7- List all areas"
+help-reload: "&e/dfd reload &7- Reload config"
+help-tp: "&e/dfd tp <area name> &7- Teleport to area"
+help-top: "&e/dfd top <time/money> &7- View leaderboard"
+help-help: "&e/dfd help &7- Show help"
+
+# Tool messages
+tool-given: "&aGiven selection tool to %player%"
+tool-first-point: "&aFirst point set"
+tool-second-point: "&aSecond point set"
+tool-no-points: "&cPlease set two points using the selection tool first"
+tool-different-worlds: "&cBoth points must be in the same world"
+
+# Area messages
+area-created: "&aAFK area created: %name%"
+area-removed: "&aAFK area removed: %name%"
+area-exists: "&cAFK area already exists: %name%"
+area-not-found: "&cAFK area not found: %name%"
+area-teleported: "&aTeleported to AFK area: %name%"
+area-list-header: "&6&lAFK Areas List:"
+area-list-item: "&7- &e%name% &7(World: %world%, Coords: %minX%,%minY%,%minZ% ~ %maxX%,%maxY%,%maxZ%)"
+no-areas: "&cNo AFK areas configured"
+
+# AFK messages
+enter-afk: "&aYou entered an AFK area, starting to earn rewards!"
+leave-afk: "&cYou left the AFK area, stopping rewards!"
+reward-received: "&aYou received %amount% reward in %area% area!"
+
+# Config messages
+config-reloaded: "&6&lDouAFKReward &7- &aConfiguration reloaded!"
+
+# Leaderboard messages
+top-created: "&aCreated %type% leaderboard"
+time-leaderboard-header: "&6&lAFK Time Leaderboard"
+money-leaderboard-header: "&6&lAFK Earnings Leaderboard"
+time-leaderboard-line: "&e%rank%. &b%player% &7- &e%time%"
+money-leaderboard-line: "&e%rank%. &b%player% &7- &e$%money%"
+no-leaderboard-data: "&cNo leaderboard data available"
+time-format: "%d hours %d minutes"
+money-format: "%.2f"
+
+# Leaderboard format configuration
+top-formats:
+  time:
+    header: "&6&lAFK Time Leaderboard"
+    no-data: "&cNo data available"
+    line: "&e%rank%. &b%player% &7- &e%time%"
+    time-format: "%d hours %d minutes"
+  money:
+    header: "&6&lAFK Earnings Leaderboard"
+    no-data: "&cNo data available"
+    line: "&e%rank%. &b%player% &7- &e$%money%"
+    money-format: "%.2f"

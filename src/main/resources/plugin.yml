@@ -1,0 +1,73 @@
+name: DouAFKReward
+version: 1.1
+main: org.examplexiaodou.douafkreward.DouAFKReward
+api-version: 1.13
+depend: [Vault]
+softdepend: [LuckPerms, PlaceholderAPI]
+
+commands:
+  dfd:
+    description: 挂机奖励插件主命令
+    usage: /<command> [subcommand]
+    aliases: [douafkreward]
+    tab-complete: true
+
+permissions:
+  douafkreward.*:
+    description: 所有挂机奖励插件权限
+    children:
+      douafkreward.give: true
+      douafkreward.give.others: true
+      douafkreward.create: true
+      douafkreward.create.top: true
+      douafkreward.list: true
+      douafkreward.reload: true
+      douafkreward.tp: true
+      douafkreward.top: true
+      douafkreward.get: true
+      douafkreward.getremove: true
+      douafkreward.help: true
+
+  douafkreward.give:
+    description: 允许使用give命令
+    default: op
+
+  douafkreward.give.others:
+    description: 允许给其他玩家圈地工具
+    default: op
+
+  douafkreward.create:
+    description: 允许创建挂机区域
+    default: op
+
+  douafkreward.create.top:
+    description: 允许创建排行榜
+    default: op
+
+  douafkreward.list:
+    description: 允许查看挂机区域列表
+    default: op
+
+  douafkreward.reload:
+    description: 允许重载配置
+    default: op
+
+  douafkreward.tp:
+    description: 允许传送到挂机区域
+    default: op
+
+  douafkreward.top:
+    description: 允许查看排行榜
+    default: op
+
+  douafkreward.get:
+    description: 允许创建坐下挂机区域
+    default: op
+
+  douafkreward.getremove:
+    description: 允许删除坐下挂机区域
+    default: op
+
+  douafkreward.help:
+    description: 允许查看帮助
+    default: op
